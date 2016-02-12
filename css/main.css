@@ -2,14 +2,23 @@
 Site: www.waqarmobeen.com
 Version: 1.0.0
 */
-
+/*#494949*/
+/*#5bbc2e*/
 /* Global Styles */
-body { font-family: 'Montserrat', sans-serif; }
+body {
+		font-family: 'Merriweather', serif;	
+}
+h1,h2,h3,h4,h5,h6{
+		font-family: 'Open Sans', sans-serif;
+}
 a{
 	transition:all .25s linear;
 	-webkit-transition:all .25s linear;
 	-moz-transition:all .25s linear;
 	-o-transition:all .25s linear;	
+}
+p{
+	font-family: 'Merriweather', serif;	
 }
 .clear{	clear:both; }
 .center{ text-align:center; }
@@ -34,6 +43,9 @@ a{
 	position: fixed;
 	z-index: 999;
 	width: 100%;
+}
+.wrapper #header .header-banner .no-display{
+	display: none;
 }
 .wrapper #header .header-banner .navbar-inverse{
 	background:transparent;
@@ -84,7 +96,10 @@ a{
 }
 .wrapper #header .arrow-container p{
 	font-size:24px;
-	color:#cccccc;
+	color:#ffffff;
+}
+.wrapper #header .arrow-container a{
+	text-decoration: none;
 }
 .wrapper #header .arrow-container .arrow {
   width: 40px;
@@ -98,9 +113,12 @@ a{
 .wrapper #header .header-title{
 	text-align:center;
 	margin-top:150px;
-	font-size:56px;
-	font-weight: 700;
+	font-size:50px;
+	font-weight: 300;
 	color:#fff;
+}
+.cd-words-wrapper b{
+	font-weight: 600;
 }
 .wrapper #header .btn-hire{
 	background: none;
@@ -115,15 +133,42 @@ a{
 	padding-right:90px;
 	font-size:24px;
 	font-weight: 700;
-	margin-top: 75px
+	margin-top: 75px;
+	font-family: 'Open Sans', sans-serif;
+	-webkit-transition: background .45s ease;
+    -moz-transition:background .45s ease;
+    -o-transition:background .45s ease;
+    -ms-transition:background .45s ease;
+    transition:background .45s ease;
+}
+.wrapper #header .btn-hire:hover{
+	background: #ffffff;
+    border: 3px solid #FFFFFF;
+    -webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	color:#494949;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:90px;
+	padding-right:90px;
+	font-size:24px;
+	font-weight: 700;
+	margin-top: 75px;
+	font-family: 'Open Sans', sans-serif;
+	-webkit-transition: background .45s ease;
+    -moz-transition:background .45s ease;
+    -o-transition:background .45s ease;
+    -ms-transition:background .45s ease;
+    transition:background .45s ease;
 }
 
 /* Services Styles */	
 .wrapper #services .content h1{
 	margin-top:80px;
 	color:#5c5c5c;
-	font-weight: 700;
-	font-size:36px;
+	font-weight: 600;
+	font-size:48px;
 }
 .wrapper #services .content h3{
 	color:#5c5c5c;
@@ -141,25 +186,25 @@ a{
 }
 .wrapper #services .sep .s-item-container .s-item-icon{
 	font-size:70px;
-	color:#5c5c5c;
+	color:#5bbc2e;
 }
 .wrapper #services .sep .s-item-container .s-item-icon h2{
 	font-size:30px;
-	color:#5c5c5c;
+	color:#5bbc2e;
 	margin-top:0px;
 	margin-bottom:0px;
-	font-weight: 700;
+	font-weight: 600;
 }
 .wrapper #services .sep .s-item-container .s-item-desc{
 	margin:0px;
 	padding: 0px;
 }
 .wrapper #services .sep .s-item-container .s-item-desc p{
-	font-size:18px;
-	color:#7a7a7a;
+	font-size:17px;
+	color:#494949;
 	margin-top:0px;
 	margin-bottom:0px;
 	font-weight: 400;
 	padding-top: 35px;
-	line-height: 28px;
+	line-height: 30px;
 }
