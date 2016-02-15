@@ -14,7 +14,7 @@
     
     <!-- Fonts -->
     <!-- <link href='https://fonts.googleapis.com/css?family=Lato:900,700' rel='stylesheet' type='text/css'> -->
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:600,400,300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:900,600,400,300' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,700' rel='stylesheet' type='text/css'>
     <!-- <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> -->
     <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -33,7 +33,7 @@
   <div class="wrapper">
   <section id="header">
   <div class="header-banner" data-parallax="scroll" data-image-src="img/header-bg.jpg">
-    <nav role="navigation" class="navbar navbar-inverse navbar-static-top fixed no-display">
+    <nav role="navigation" class="no-display">
       <div class="container-fluid">
         
         <!-- Logo -->
@@ -43,14 +43,14 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a href="#" class="navbar-brand">Waqar Mobeen</a>
+            <a id="btn-home" href="#" class="navbar-brand">Waqar<span class="bold">Mobeen</span></a>
         </div>
 
         <!-- Menu Items -->
         <div class="collapse navbar-collapse" id="headerNav">
             <ul class="nav navbar-nav navbar-right">
               <li><a href="#">About</a></li>
-              <li><a href="#">Services</a></li>
+              <li><a id="btn-services" href="#">Services</a></li>
               <li><a href="#">Portfolio</a></li>
               <li><a href="#">Contact</a></li>
             </ul>
@@ -80,7 +80,7 @@
           </h1>
 
           <div class="center">
-          <button id="btn-hire-me" type="button" class="btn btn-hire">HIRE ME</button>
+          <button id="btn-hireme" type="button" class="btn btn-hire">HIRE ME</button>
           </div>
 
             
@@ -98,13 +98,13 @@
   <section id="services">
         <div class="container">
         <div class="row">
-          <div class="col-sm-12">
+          <div class="col-sm-12 wow fadeIn" data-wow-delay="0.5s" data-wow-duration="2s">
             <div class="content center">
               <h1>Services</h1>
               <h3>I've got chops in all phases of the design process.</h3> 
             </div>  
           <div class="sep">
-            <div class="col-md-4 wow fadeInLeft" data-wow-duration="2s">
+            <div class="col-md-4">
                 <div class="s-item-container">
                   <div class="s-item-icon">
                     <i class="fa fa-lightbulb-o"></i>
@@ -118,7 +118,7 @@
                 </div>    
             </div>   
 
-            <div class="col-md-4 wow fadeInUp" data-wow-duration="2s">
+            <div class="col-md-4">
                 <div class="s-item-container">
                   <div class="s-item-icon">
                     <i class="fa fa-laptop"></i>
@@ -133,7 +133,7 @@
             </div>  
 
 
-            <div class="col-md-4 wow fadeInRight" data-wow-duration="2s">
+            <div class="col-md-4">
                 <div class="s-item-container">
                   <div class="s-item-icon">
                     <i class="fa fa-code"></i>

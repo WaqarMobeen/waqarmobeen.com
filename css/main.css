@@ -5,18 +5,42 @@ Version: 1.0.0
 /*#494949*/
 /*#5bbc2e*/
 /* Global Styles */
+@font-face {
+    font-family: 'nexa_boldregular';
+    src: url('../fonts/nexa_bold-webfont.eot');
+    src: url('../fonts/nexa_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/nexa_bold-webfont.woff2') format('woff2'),
+         url('../fonts/nexa_bold-webfont.woff') format('woff'),
+         url('../fonts/nexa_bold-webfont.ttf') format('truetype'),
+         url('../fonts/nexa_bold-webfont.svg#nexa_boldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'nexa_lightregular';
+    src: url('../fonts/nexa_light-webfont.eot');
+    src: url('../fonts/nexa_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/nexa_light-webfont.woff2') format('woff2'),
+         url('../fonts/nexa_light-webfont.woff') format('woff'),
+         url('../fonts/nexa_light-webfont.ttf') format('truetype'),
+         url('../fonts/nexa_light-webfont.svg#nexa_lightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 body {
 		font-family: 'Merriweather', serif;	
 }
 h1,h2,h3,h4,h5,h6{
 		font-family: 'Open Sans', sans-serif;
 }
-a{
+/*a{
 	transition:all .25s linear;
 	-webkit-transition:all .25s linear;
 	-moz-transition:all .25s linear;
 	-o-transition:all .25s linear;	
-}
+}*/
 p{
 	font-family: 'Merriweather', serif;	
 }
@@ -34,57 +58,60 @@ p{
 	position: relative;
 }
 .wrapper #header nav{
-	transition:all .45s linear;
+/*	transition:all .45s linear;
 	-webkit-transition:all .45s linear;
 	-moz-transition:all .45s linear;
-	-o-transition:all .45s linear;
+	-o-transition:all .45s linear;*/
 }
 .wrapper #header .header-banner .fixed{
 	position: fixed;
 	z-index: 999;
 	width: 100%;
+	top: 0px;
+	transition:1s;
+	-webkit-transition:1s;
+	-moz-transition:1s;
+	-o-transition:1s;
 }
 .wrapper #header .header-banner .no-display{
-	display: none;
+	position: fixed;
+	visibility: hidden;
+	top:-50px;
 }
 .wrapper #header .header-banner .navbar-inverse{
-	background:transparent;
-	border:none;
-	padding-left:10px;
-	padding-right:10px;
+	background:#FFFFFF;
+	-moz-box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
+	-webkit-box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
+	box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
+	border: none;
+/*	padding-left:10px;
+	padding-right:10px;*/
 }
 .wrapper #header .header-banner .navbar-inverse .navbar-brand{
-	font-weight:700;
 	font-size:26px;
+	font-family: 'nexa_lightregular', sans-serif;
+	color:#5c5c5c;
+}
+.wrapper #header .header-banner .navbar-inverse .navbar-brand span.bold{
+	font-family: 'nexa_boldregular', sans-serif;
+}
+.wrapper #header .header-banner .navbar-inverse .navbar-brand:hover{
+	color:#5bbc2e;	
 }
 .wrapper #header .header-banner .navbar-right>li>a{
 	font-size:18px;
-	padding-left: 10px;
-	padding-right: 10px;
+	font-family: 'nexa_lightregular', sans-serif;
+	color:#5c5c5c;
+/*	padding-left: 10px;
+	padding-right: 10px;*/
+}
+.wrapper #header .header-banner .navbar-right>li>a:hover{
+	color:#5bbc2e;	
 }
 .wrapper #header .header-banner .navbar-right>li:last-child>a{
-	padding-right: 20px;	
+/*	padding-right: 20px;	*/
 }
 
-.wrapper #header .header-banner .nav-shrink{
-	background:rgba(0,0,0,0.9);
-	padding-top:5px;
-	padding-bottom: 5px;
-
-}
-.wrapper #header .header-banner .nav-shrink .navbar-brand{
-	font-size:18px;
-	color:#9d9d9d;
-}
-
-.wrapper #header .header-banner .nav-shrink a{
-	color:#9d9d9d;
-	font-size:16px;
-}
-.wrapper #header .header-banner .nav-shrink a:hover{
-	color:#FFFFFF;
-	font-size:16px;
-}
 @-moz-keyframes bounce { 0%, 20%, 50%, 80%, 100% { -moz-transform: translateY(0); transform: translateY(0); } 40% { -moz-transform: translateY(-30px); transform: translateY(-30px); } 60% { -moz-transform: translateY(-15px); transform: translateY(-15px); } }
 @-webkit-keyframes bounce { 0%, 20%, 50%, 80%, 100% { -webkit-transform: translateY(0); transform: translateY(0); } 40% { -webkit-transform: translateY(-30px); transform: translateY(-30px); } 60% { -webkit-transform: translateY(-15px); transform: translateY(-15px); } }
 @keyframes bounce { 0%, 20%, 50%, 80%, 100% { -moz-transform: translateY(0); -ms-transform: translateY(0); -webkit-transform: translateY(0); transform: translateY(0); } 40% { -moz-transform: translateY(-30px); -ms-transform: translateY(-30px); -webkit-transform: translateY(-30px); transform: translateY(-30px); } 60% { -moz-transform: translateY(-15px); -ms-transform: translateY(-15px); -webkit-transform: translateY(-15px); transform: translateY(-15px); } }
