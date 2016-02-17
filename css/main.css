@@ -258,6 +258,32 @@ p{
 .wrapper #portfolio .porfolio-item img{
 	width: 100%;
 }
+#effect-2 figure figcaption{
+	background-color:#5bbc2e;
+}
+#effect-2 figure figcaption h3{
+	font-family: 'Open Sans', sans-serif;
+}
+#effect-2 figure figcaption span {
+    padding: 10px;
+    color:#ffffff;
+
+}
+.wrapper #portfolio .btn-case-study{
+	display: inline-block;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: #ffffff;
+	color:#5c5c5c;
+	width: 45%; 
+}
+.wrapper #portfolio .btn-case-study:hover{
+	background-color: #5b5b5b;
+	color:#ffffff;
+	text-decoration: none;
+}
 
 /* About Me */
 .wrapper #about-me{

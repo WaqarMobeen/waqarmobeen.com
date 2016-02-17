@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Waqar Mobeen</title>
-    
+    <link href="css/img-caption.css" rel="stylesheet">
     <link href="css/words-style.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
     <!-- Bootstrap -->
@@ -158,16 +158,35 @@
               <div class="content center">
                 <h1>Portfolio</h1>
             </div>
-            <div class="container">
+            <div id="effect-2" class="container">
               <div class="row">
                 <div class="col-sm-4 wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1s">
                   <div class="porfolio-item">
-                    <img class="img-responsive" src="img/sample-portfolio.jpg">
+                    <figure>
+                        <img class="img-responsive" src="img/sample-portfolio.jpg">
+                        <figcaption>
+                            <h3>Yahoo!</h3>
+                            <span>CodeIgniter | Graphic Design | UI/UX | Web Design | HTML5 | CSS3</span>
+                            <br />
+                            <a class="btn-case-study" href="#">
+                              View Case Study
+                            </a>
+                            <a href="#" class="close-caption hidden">x</a>
+                        </figcaption>
+                    </figure>
                   </div>
                 </div>
               <div class="col-sm-4 wow fadeInUp" data-wow-delay="1s" data-wow-duration="1s">
                   <div class="porfolio-item">
-                    <img class="img-responsive" src="img/sample-portfolio.jpg">
+                    <figure>
+                        <img class="img-responsive" src="img/sample-portfolio.jpg">
+                        <figcaption>
+                            <h3>Blubber Brothers</h3>
+                            <span>Burnt Toast Creative</span>
+  
+                            <a href="#" class="close-caption hidden">x</a>
+                        </figcaption>
+                    </figure>
                   </div>
                 </div>
 
@@ -244,5 +263,6 @@
     <script src="js/main.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/custom.js"></script>
+    <script src="js/touch.js"></script>
   </body>
 </html>
