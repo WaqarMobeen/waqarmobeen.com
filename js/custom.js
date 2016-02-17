@@ -8,7 +8,7 @@
 
         var displayNavMenu = function()
         {
-        	var menuPosition = $('#services').offset().top;
+        	var menuPosition = $('#services').offset().top - 30;
 	          if ( $(window).scrollTop() >= menuPosition ){
     	      	$('nav').removeClass('no-display').addClass('navbar navbar-static-top navbar-inverse fixed');
         	    }else{
@@ -24,6 +24,29 @@ $('#btn-services').click(function (e){
     );
 });
 
+$('#btn-portfolio').click(function (e){
+    e.preventDefault();
+    $('html, body').animate(
+    {scrollTop: $('#portfolio').offset().top},
+    {duration: 1000,easing: "swing"}
+    );
+});
+
+$('#btn-about-me').click(function (e){
+    e.preventDefault();
+    $('html, body').animate(
+    {scrollTop: $('#about-me').offset().top},
+    {duration: 1000,easing: "swing"}
+    );
+});
+
+$('#btn-more-about-me').click(function (e){
+    e.preventDefault();
+    $('html, body').animate(
+    {scrollTop: $('#about-me').offset().top},
+    {duration: 1000,easing: "swing"}
+    );
+});
 
 $('#btn-home').click(function (e){
     e.preventDefault();
