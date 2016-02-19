@@ -1,10 +1,40 @@
-        $( document ).ready(function() {
+        /* document ready function begins --> */$( document ).ready(function() {
           
           $( window ).scroll(function(){
             displayNavMenu();
           });
 
-        });
+		 $('.about-nav li a').click(function() {
+		  	var curChildIndex = $(this).parent().prevAll().length + 1;
+		  	var testValue = $(this).data("tabname");
+		  	
+		  	$(this).parent().parent().children('.active').removeClass('active');
+		  	$(this).parent().addClass('active');
+		  	$('.about-inner').children('.active').fadeOut('fast',function() {
+		   	$(this).removeClass('active');
+		   	if (testValue == "SKILLS")
+		   	{
+			   	$(this).parent().children('div:nth-child('+curChildIndex+')').fadeIn('normal',function() {
+		    	$(this).addClass('active');
+				   	$('.skillbar').each(function(){
+						$(this).find('.skillbar-bar').animate({
+							width:$(this).attr('data-percent')
+						},4000);
+					});	
+		   		});
+		   		
+		   	}
+		   	else
+		   	{
+			   	$(this).parent().children('div:nth-child('+curChildIndex+')').fadeIn('normal',function() {
+			    $(this).addClass('active');
+			   });
+			}
+		  });
+		  return false;        
+		 });
+
+        });/* <-- document ready function ends */
 
         var displayNavMenu = function()
         {
