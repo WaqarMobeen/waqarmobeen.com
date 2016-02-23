@@ -3,7 +3,7 @@ Site: www.waqarmobeen.com
 Version: 1.0.0
 */
 /*#494949*/
-/*#5bbc2e*/
+/*#31a344*/
 /* Global Styles */
 @font-face {
     font-family: 'nexa_boldregular';
@@ -96,7 +96,7 @@ p{
 	font-family: 'nexa_boldregular', sans-serif;
 }
 .wrapper #header .header-banner .navbar-inverse .navbar-brand:hover{
-	color:#5bbc2e;	
+	color:#31a344;	
 }
 .wrapper #header .header-banner .navbar-right>li>a{
 	font-size:18px;
@@ -106,7 +106,7 @@ p{
 	padding-right: 10px;*/
 }
 .wrapper #header .header-banner .navbar-right>li>a:hover{
-	color:#5bbc2e;	
+	color:#31a344;	
 }
 .wrapper #header .header-banner .navbar-right>li:last-child>a{
 /*	padding-right: 20px;	*/
@@ -216,11 +216,11 @@ p{
 }
 .wrapper #services .sep .s-item-container .s-item-icon{
 	font-size:70px;
-	color:#5bbc2e;
+	color:#31a344;
 }
 .wrapper #services .sep .s-item-container .s-item-icon h2{
 	font-size:30px;
-	color:#5bbc2e;
+	color:#31a344;
 	margin-top:0px;
 	margin-bottom:0px;
 	font-weight: 600;
@@ -259,7 +259,7 @@ p{
 	width: 100%;
 }
 #effect-2 figure figcaption{
-	background-color:#5bbc2e;
+	background-color:#31a344;
 }
 #effect-2 figure figcaption h3{
 	font-family: 'Open Sans', sans-serif;
@@ -288,10 +288,11 @@ p{
 /* About Me */
 .wrapper #about-me{
 	font-family: 'nexa_lightregular', serif;
+	padding-bottom: 85px;
 }
 .wrapper #about-me .content h1{
 	margin-top:80px;
-	color:#5bbc2e;
+	color:#31a344;
 	font-family:'nexa_boldregular', serif;
 	font-size:36px;
 }
@@ -299,7 +300,7 @@ p{
 	padding: 0px;
 }
 .wrapper #about-me .about-nav .active a{
-	color:#5bbc2e;
+	color:#31a344;
 	text-decoration: none;
 }
 .wrapper #about-me .about-nav .active a:hover{
@@ -312,7 +313,7 @@ p{
 }
 .wrapper #about-me .about-nav>li::after{
 	content: " /";
-	color:#5bbc2e;
+	color:#31a344;
 	font-size:24px;
 }
 .wrapper #about-me .about-nav>li:last-child::after{
@@ -327,7 +328,7 @@ p{
 }
 .wrapper #about-me .about-nav>li>a:hover{
 	text-decoration:none;
-	color:#5bbc2e;
+	color:#31a344;
 }
 .wrapper #about-me .about-inner p{
 	font-size:22px;
@@ -413,4 +414,85 @@ p{
 	line-height:30px;
 	color:#ffffff;
 	color:rgba(0, 0, 0, 0.4);
+}
+
+/* Contact */
+.wrapper #contact{
+	background: #31a344;
+	color: #ffffff;
+	font-weight: normal;
+	padding-bottom: 80px;
+}
+.wrapper #contact .content h1{
+	margin-top:80px;
+	font-family:'nexa_boldregular', serif;
+	font-size:36px;
+}
+.wrapper #contact .content p{
+	font-size:22px;
+	padding-left: 200px;
+	padding-right: 200px;
+	line-height: 36px;
+	margin-top: 48px; 
+	padding-bottom: 65px;
+	margin-bottom: 0px;
+}
+.wrapper #contact .btn-hire{
+	background: none;
+    border: 3px solid #FFFFFF;
+    -webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	color:#fff;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:65px;
+	padding-right:65px;
+	font-size:24px;
+	font-weight: 700;
+	margin-top: 0px;
+	font-family: 'Open Sans', sans-serif;
+	-webkit-transition: background .45s ease;
+    -moz-transition:background .45s ease;
+    -o-transition:background .45s ease;
+    -ms-transition:background .45s ease;
+    transition:background .45s ease;
+}
+.wrapper #contact .btn-hire:hover{
+	background: #ffffff;
+    border: 3px solid #FFFFFF;
+    -webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	color:#494949;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:65px;
+	padding-right:65px;
+	font-size:24px;
+	font-weight: 700;
+	margin-top: 0px;
+	font-family: 'Open Sans', sans-serif;
+	-webkit-transition: background .45s ease;
+    -moz-transition:background .45s ease;
+    -o-transition:background .45s ease;
+    -ms-transition:background .45s ease;
+    transition:background .45s ease;
+}
+.wrapper #footer{
+	background: #333333;
+	padding-top:70px;
+	padding-bottom:70px;
+}
+.wrapper #footer .content p{
+	font-size: 26px;
+	color:#999999;
+	font-family:'nexa_boldregular', serif;
+	margin:0px;
+	padding: 0px;
+}
+.wrapper #footer .content p span{
+	font-size: 18px;
+	color:#999999;
+	font-family:'nexa_lightregular', serif;
 }

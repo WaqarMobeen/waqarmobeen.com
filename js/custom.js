@@ -86,6 +86,22 @@ $('#btn-home').click(function (e){
     );
 });
 
+$('#btn-hireme').click(function (e){
+    e.preventDefault();
+    $('html, body').animate(
+    {scrollTop: $('#contact').offset().top},
+    {duration: 1000,easing: "swing"}
+    );
+});
+
+$('#btn-contact').click(function (e){
+    e.preventDefault();
+    $('html, body').animate(
+    {scrollTop: $('#contact').offset().top},
+    {duration: 1000,easing: "swing"}
+    );
+});
+
 // Initialize wowJS
 wow = new WOW(
           	{
