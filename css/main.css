@@ -263,6 +263,7 @@ p{
 }
 #effect-2 figure figcaption h3{
 	font-family: 'Open Sans', sans-serif;
+	margin-top: 25%;
 }
 #effect-2 figure figcaption span {
     padding: 10px;
@@ -278,11 +279,13 @@ p{
 	background-color: #ffffff;
 	color:#5c5c5c;
 	width: 45%; 
+	display: none;
 }
 .wrapper #portfolio .btn-case-study:hover{
 	background-color: #5b5b5b;
 	color:#ffffff;
 	text-decoration: none;
+	display: none;
 }
 
 /* About Me */
@@ -495,4 +498,57 @@ p{
 	font-size: 18px;
 	color:#999999;
 	font-family:'nexa_lightregular', serif;
+}
+
+
+
+
+
+/* Responsive CSS */
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+.wrapper #footer .content p span{
+	display: block;
+	color: #ff0000;
+}
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+.wrapper #footer .content p span{
+	display: block;
+	color: #000;
+}
+.wrapper #header .header-title{
+	font-size: 45px;
+}
+.wrapper #contact .content p {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+#effect-2 figure figcaption h3 {
+    margin-top: 15%;
+}
+.container {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+}
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+.wrapper #header .header-title {
+    font-size: 30px;
+}
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+
+
+
 }

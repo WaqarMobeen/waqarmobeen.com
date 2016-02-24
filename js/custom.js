@@ -70,10 +70,10 @@ $('#btn-about-me').click(function (e){
     );
 });
 
-$('#btn-more-about-me').click(function (e){
+$('#btn-read-more').click(function (e){
     e.preventDefault();
     $('html, body').animate(
-    {scrollTop: $('#about-me').offset().top},
+    {scrollTop: $('#services').offset().top},
     {duration: 1000,easing: "swing"}
     );
 });
