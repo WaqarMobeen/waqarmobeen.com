@@ -1,8 +1,20 @@
         /* document ready function begins --> */$( document ).ready(function() {
           
+          $(window).load(function(){
+            var screenHeight = $(window).height();
+            var dHeaderHeight = $('.dheader-container').outerHeight();
+            dynamicHeader(screenHeight,dHeaderHeight);
+          });
+
           $( window ).scroll(function(){
             displayNavMenu();
           });    
+
+          $(window).resize(function() {
+            var screenHeight = $(window).height();
+            var dHeaderHeight = $('.dheader-container').outerHeight(true);
+            dynamicHeader(screenHeight,dHeaderHeight);
+          });
 
         //Mobile Nav Menu
 		$('.mobile-menu').click(function(e){
@@ -52,6 +64,13 @@
         	    }else{
             	$('nav').removeClass('navbar navbar-static-top navbar-inverse fixed').addClass('no-display');
             	}
+        };
+
+        var dynamicHeader = function(screenHeight,dynamicHeaderHeight){       
+            var difference = screenHeight - dynamicHeaderHeight;
+            difference = difference / 2;
+            $('.dheader-container').css('padding-top', + difference);
+            $('.header-banner').css('height', + screenHeight);
         };
 
 $('#btn-services').click(function (e){
